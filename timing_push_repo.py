@@ -11,6 +11,7 @@ current_path = os.getcwd()
 
 
 def commit():
+    os.popen("git add .")
     return os.popen(
         "git commit -am 'covid-19简报更新  ---> update time: " + time.strftime("%Y-%m-%d %H:%M:%S",
                                                                            time.localtime()) + "'")
