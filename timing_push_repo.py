@@ -6,7 +6,7 @@ commit_success_reply = "changed"
 commit_noting_reply = "nothing to commit"
 
 push_done = "done."
-push_over = "Everything up-to-date"
+push_over = "up-to-date"
 current_path = os.getcwd()
 
 
@@ -34,7 +34,7 @@ def start(path=""):
     if commit_success_reply in reply:
         logging.warning("commit success, start push, try again 3 times ")
         count = 1
-        while push_done not in push():
+        while push_over not in push():
             if count > 3:
                 logging.warning("retried 3 times , break")
                 break
