@@ -1,0 +1,9 @@
+.idea
+.idea/workspace.xml
+
+__pycache__
+venv
+
+log
+
+tempCodeRunnerFile.py
