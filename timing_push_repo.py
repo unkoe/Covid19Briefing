@@ -11,14 +11,14 @@ current_path = os.getcwd()
 
 
 def commit():
-    os.popen("git add .")
+    os.system("git add .")
     return os.popen(
         "git commit -am 'covid-19简报更新  ---> update time: " + time.strftime("%Y-%m-%d %H:%M:%S",
-                                                                           time.localtime()) + "'")
+                                                                           time.localtime()) + "'").read()
 
 
 def push():
-    return os.popen("git push --force origin master")
+    return os.popen("git push --force origin master").read()
 
 
 def start(path=""):
