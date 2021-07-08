@@ -18,6 +18,7 @@ def commit():
 
 
 def push():
+    os.system("git pull")
     return os.popen("git push --force origin master").read()
 
 
