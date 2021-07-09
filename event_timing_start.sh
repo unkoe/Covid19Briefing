@@ -5,4 +5,4 @@
 echo "UPDATE ... `pwd`"
 git pull
 echo "START TIMING"
-python3 main.py
+/bin/python3 /root/docker/Covid19Briefing/main.py
