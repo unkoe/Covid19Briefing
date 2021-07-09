@@ -20,7 +20,7 @@ def commit():
 def push():
     os.system("git pull")
     info = os.popen("git push --force origin master").read()
-    logging.warning(info)
+    logging.warning("git info"+info)
     return info
 
 
