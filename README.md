@@ -6,7 +6,7 @@
 
 [Covid-19实时简报数据接口](https://raw.githubusercontent.com/unkoe/Covid19Briefing/master/covid19/covid-19.json)
 
-**API JSON:** `https://raw.githubusercontent.com/unkoe/Covid19Briefing/master/covid19/covid-19.json`
+**REST API:** `https://raw.githubusercontent.com/unkoe/Covid19Briefing/master/covid19/covid-19.json`
 
 
 
