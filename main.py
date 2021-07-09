@@ -17,7 +17,7 @@ src_file = "/root/docker/qq-robot/download/pipline/covid/covid-19.json"
 dest_file = os.getcwd() + "/covid19/covid-19.json"
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
-    logging.basicConfig(filename=os.getcwd()+'/log/debug.log',
+    logging.basicConfig(filename='/root/docker/Covid19Briefing/log/debug.log',
                         level=logging.INFO,
                         filemode='a',
                         format='%(asctime)s - %(pathname)s[line:%(lineno)d] - %(levelname)s: %(message)s')
