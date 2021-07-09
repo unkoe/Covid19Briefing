@@ -1,5 +1,6 @@
 import logging
 import os
+import subprocess
 import time
 
 commit_success_reply = "changed"
@@ -14,13 +15,13 @@ def commit():
     os.system("git add .")
     return os.popen(
         "git commit -am 'Covid-19 简报更新  ---> update time: " + time.strftime("%Y-%m-%d %H:%M:%S",
-                                                                           time.localtime()) + "'").read()
+                                                                            time.localtime()) + "'").read()
 
 
 def push():
     os.system("git pull")
-    info = os.popen("git push --force origin master").read()
-    logging.warning("git info"+info)
+    info = subprocess.Popen('git push --force origin master', stdout=subprocess.PIPE, shell=True,
+                            stderr=subprocess.STDOUT).communicate()[0].decode()
     return info
 
 
