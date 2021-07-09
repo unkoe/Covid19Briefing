@@ -2,7 +2,7 @@
 
 . /etc/profile
 
-echo "UPDATE CODES, `pwd`"
+echo "UPDATE ... `pwd`"
 git pull
 echo "START TIMING"
 python3 main.py
