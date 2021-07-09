@@ -3,6 +3,6 @@
 . /etc/profile
 
 echo "UPDATE ... `pwd`"
-git pull
+/usr/bin/git pull
 echo "START TIMING"
-/bin/python3 /root/docker/Covid19Briefing/main.py
+/usr/bin/python3 /root/docker/Covid19Briefing/main.py
