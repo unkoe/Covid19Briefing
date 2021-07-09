@@ -1,4 +1,6 @@
-#!/bin/bash
+#!/bin/sh
+
+. /etc/profile
 
 echo "UPDATE CODES, `pwd`"
 git pull
