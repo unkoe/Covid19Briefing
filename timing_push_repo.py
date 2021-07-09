@@ -31,6 +31,7 @@ def start(path=""):
     else:
         try:
             os.chdir(path)
+            logging.info(path)
         except Exception:
             os.chdir(current_path)
 
